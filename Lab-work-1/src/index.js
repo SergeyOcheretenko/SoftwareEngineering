@@ -12,6 +12,21 @@ const squareSolver = (a, b, c) => {
 	return [xOne, xTwo];
 };
 
-console.log(...squareSolver(1, 4, -5)); // 1 -5
-console.log(...squareSolver(1, -4, 4)); // -2
-console.log(...squareSolver(1, 1, 2)); // Discriminant < 0
+let readline = require('readline'); 
+let rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    prompt: '> '
+});
+
+rl.prompt();
+
+rl.on('line', (input) => {
+    input = input.toLowerCase();
+    console.log(input);   
+    rl.close();
+});
+
+// console.log(...squareSolver(1, 4, -5)); // 1 -5
+// console.log(...squareSolver(1, -4, 4)); // -2
+// console.log(...squareSolver(1, 1, 2)); // Discriminant < 0
