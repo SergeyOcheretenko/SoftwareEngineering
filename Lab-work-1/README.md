@@ -62,7 +62,7 @@ npm start [arguments]
 
 ### Support
 
-**Telegram**: [@OcheretenkoS](https://t.me/OcheretenkoS).
+**Telegram**: [@OcheretenkoS](https://t.me/OcheretenkoS).  
 **Gmail**: [ocheretenko.s@gmail.com](mailto:ocheretenko.s@gmail.com).
 
 ### Authors 
