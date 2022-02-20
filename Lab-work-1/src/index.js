@@ -1,7 +1,12 @@
 'use strict';
 
+const fs = require('fs')
+
 const readline = require('readline-sync');
-const args = process.argv.slice(2);
+const PATH = process.argv[2];
+const NUMBERS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const checkNumber = (number) => isNaN(Number(number)) ? false : true;
 
 const squareSolver = (a, b, c) => {
 	const discriminant = b ** 2 - 4 * a * c;
@@ -26,6 +31,22 @@ const readlineMethod = () => {
     return squareSolver(a, b, c);
 };
 
+const pathMethod = () => {
+    try {
+        const data = fs.readFileSync(PATH, 'utf8')
+        const coefficients = data.slice(0, data.length - 2).split(' ');
+        if (!coefficients.every(checkNumber) || coefficients.length !== 3) {
+            console.log('The file does not contain numbers.');
+            return;
+        }
+        return squareSolver(...coefficients);
+    } catch (err) {
+        console.log('This file doesnt exists.');
+        return;
+    }
+};
+
+console.log(pathMethod());
 console.log(readlineMethod());
 
 // console.log(...squareSolver(1, 4, -5)); // 1 -5
