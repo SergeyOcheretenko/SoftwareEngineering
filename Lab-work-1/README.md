@@ -1,14 +1,69 @@
 # Лабораторна робота 1
 
-### Контекст
+### Context
 
-Проект для автоматизації вирішення рівнянь різного типу.  
+Проект для автоматизації вирішення математичних рівнянь різного типу.  
 Створений для **полегшення процесу взаємодії** користувача з обчислювальною програмою.
 
-### Цілі проекту
+### Goals
 
-### CLI інтерфейс
+Консольний додаток надає змогу розв'язувати такі рівняння, як:
++ квадратні рівняння будь-якого вигляду;
++ лінійні рівняння будь-якого вигляду.
 
-### Розгортання проекту
+Проект полегшує взаємодію користувача з програмою, даючи змогу працювати в двох режимах:
++ режим передачі шляху до текстового файлу з потрібними даними;
++ режим консольного вводу потрібних даних.
 
-### Автор
+### Installation
+Проект створено з використаннях технологій **Node.js** та **NPM**.
+
+Встановлення Node.js та NPM на локальний пристрій:
+```bash
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+```
+
+Програма використовує Node.js версії v17.3.1. 
+Щоб її встановити, використаємо **NVM**.
+
+**Встановлюємо NVM:**
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+```
+
+Можемо отримати список усіх доступних для встановлення версій Node.js:
+```bash
+nvm list-remote
+```
+
+**Встановлюємо потрібну версію Node.js:**
+```bash
+nvm install v17.3.1
+```
+
+### Run Locally
+
+Склонуємо репозиторій на локальний пристрій:
+```bash
+git clone https://github.com/SergeyOcheretenko/SoftwareEngineering.git
+cd SoftwareEngineering
+```
+
+Переходимо в робочу директорію та запускаємо проект за допомогою технології NPM:
+```bash
+cd Lab-work-1/src
+npm start [arguments]
+```
+
+### Usage/Examples
+
+### Support
+
+**Telegram**: [@OcheretenkoS](https://t.me/OcheretenkoS).
+**Gmail**: [ocheretenko.s@gmail.com](mailto:ocheretenko.s@gmail.com).
+
+### Authors 
++ [Sergey Ocheretenko](https://github.com/SergeyOcheretenko)
