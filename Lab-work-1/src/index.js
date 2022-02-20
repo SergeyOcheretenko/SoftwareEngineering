@@ -24,10 +24,24 @@ const squareSolver = (a, b, c) => {
 };
 
 const readlineMethod = () => {
-    const a = readline.question('Input number a: ');
-    const b = readline.question('Input number b: ');
-    const c = readline.question('Input number c: ');
+    let a = readline.question('a = ');
+    while(!checkNumber(a)) {
+        console.log("It's not a number. Repeat please");
+        a = readline.question('a = ');
+    };
     
+    let b = readline.question('b = ');
+    while(!checkNumber(b)) {
+        console.log("It's not a number. Repeat please");
+        b = readline.question('b = ');
+    };
+    
+    let c = readline.question('c = ');
+    while(!checkNumber(c)) {
+        console.log("It's not a number. Repeat please");
+        c = readline.question('c = ');
+    };
+
     return squareSolver(a, b, c);
 };
 
