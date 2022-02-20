@@ -52,9 +52,14 @@ git clone https://github.com/SergeyOcheretenko/SoftwareEngineering.git
 cd SoftwareEngineering
 ```
 
-Переходимо в робочу директорію та запускаємо проект за допомогою технології NPM:
+Переходимо в робочу директорію та завантадуємо потрібні модулі::
 ```bash
 cd Lab-work-1/src
+npm install
+```
+
+Запускаємо програму за допомогою технології NPM:
+```bash
 npm start [arguments]
 ```
 
