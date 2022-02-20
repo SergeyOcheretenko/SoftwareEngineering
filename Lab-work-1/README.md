@@ -60,6 +60,8 @@ npm start [arguments]
 
 ### Usage/Examples
 
+**Revert commit usage example:** [commit 48d2715](https://github.com/SergeyOcheretenko/SoftwareEngineering/commit/48d271557b82354fe49d2ec5688319e92ee1ed1a).
+
 ### Support
 
 **Telegram**: [@OcheretenkoS](https://t.me/OcheretenkoS).  
