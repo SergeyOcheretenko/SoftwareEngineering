@@ -65,7 +65,88 @@ npm start [arguments]
 
 ### Usage/Examples
 
-**Revert commit usage example:** [commit 48d2715](https://github.com/SergeyOcheretenko/SoftwareEngineering/commit/48d271557b82354fe49d2ec5688319e92ee1ed1a).
+**Приклад використання Revert Commit:** [commit 48d2715](https://github.com/SergeyOcheretenko/SoftwareEngineering/commit/48d271557b82354fe49d2ec5688319e92ee1ed1a).
+
+**Приклади використання програми:**
+
+|**FILE CONTENT**  | **INPUT**                | **OUTPUT**                         |
+|------------------|--------------------------|------------------------------------|
+| ```2 -9.5 4.3``` | ```npm start test.txt``` |This is a quadratic equation!       |
+|                  |                          | (2) * x^2 + (-9.5) * x + (4.3) = 0 |
+|                  |                          | There are 2 roots.                 |
+|                  |                          | x1 = 4.243321439153338             |
+|                  |                          | x2 = 0.506678560846662             |
+
+|**FILE CONTENT** | **INPUT**                                     | **OUTPUT**                |
+|-----------------|-----------------------------------------------|---------------------------|
+|```0 -5 4```     | ```npm start /home/ocheretenko/numbers.txt``` |This is a linear equation! |
+|                 |                                               | (-5) * x + (4) = 0        |
+|                 |                                               | One solution.             |
+|                 |                                               | x = 0.8                   |
+
+| **FILE CONTENT** | **INPUT**                                            | **OUTPUT**                         |
+|------------------|------------------------------------------------------|------------------------------------|
+|```Test```        | ```npm start /home/ocheretenko/Documents/test.txt``` | The file does not contain numbers. |
+
+| **FILE CONTENT**     | **INPUT**                                      | **OUTPUT**              |
+|----------------------|------------------------------------------------|-------------------------|
+| ```Doesnt exists.``` | ```npm start /home/ocheretenko/new_test.txt``` |This file doesnt exists. |
+
+| **INPUT**                                      | **OUTPUT**                      |
+|------------------------------------------------|---------------------------------|
+| ```npm start /home/ocheretenko/new_test.txt``` |  This is a quadratic equation!  |
+| ```a = 1 ```                                   |  (1) * x^2 + (4) * x + (-5) = 0 |
+| ```b = 4```                                    |  There are 2 roots.             |
+| ```c = -5```                                   |  x1 = 1                         |
+|                                                | x2 = -5                         |
+
+| **INPUT**                              | **OUTPUT**                        |
+|----------------------------------------|-----------------------------------|
+| ```npm start```                        |  This is a quadratic equation!    |
+| ```a = 1 ```                           |  (1) * x^2 + (3) * x + (2.25) = 0 |
+| ```b = invalid```                      |  Only one root.                   |
+| ```It's not a number. Repeat please``` |  x = -1.5                         |
+| ```b = repeat invalid```               |                                   |
+| ```It's not a number. Repeat please``` |                                   |
+| ```b = 3 ```                           |                                   |
+| ```c = 2oops```                        |                                   |
+| ```It's not a number. Repeat please``` |                                   |
+| ```c = 2.25```                         |                                   |
+
+| **INPUT**       | **OUTPUT**                    |
+|-----------------|-------------------------------|
+| ```npm start``` | This is a quadratic equation! |
+| ```a = 1 ```    | (1) * x^2 + (2) * x + (3) = 0 |
+| ```b = 2```     | Discriminant < 0. No roots.   |
+| ```c = 3```     |                               |
+
+| **INPUT**       | **OUTPUT**                  |
+|-----------------|-----------------------------|
+| ```npm start``` |  This is a linear equation! |
+| ```a = 0 ```    |  (2) * x + (7) = 0          |
+| ```b = 2```     |  One solution.              |
+| ```c = 7```     |  x = -3.5                   |
+
+| **INPUT**       | **OUTPUT**                 |
+|-----------------|----------------------------|
+| ```npm start``` | This is a linear equation! |
+| ```a = 0 ```    | (0) * x + (4) = 0          |
+| ```b = 0```     | No roots                   |
+| ```c = 4```     |                            |
+
+| **INPUT**       | **OUTPUT**                  |
+|-----------------|-----------------------------|
+| ```npm start``` |  This is a linear equation! |
+| ```a = 0 ```    |  (3) * x + (0) = 0          |
+| ```b = 3```     |  One root.                  |
+| ```c = 0```     |  x = 0                      |
+
+| **INPUT**       | **OUTPUT**                    |
+|-----------------|-------------------------------|
+| ```npm start``` |  This is a linear equation!   |
+| ```a = 0 ```    |  (0) * x + (0) = 0            |
+| ```b = 0```     |  Infinite number of solutions |
+| ```c = 0```     |                               |
 
 ### Support
 
