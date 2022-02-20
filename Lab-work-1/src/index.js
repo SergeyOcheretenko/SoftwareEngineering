@@ -36,18 +36,22 @@ const pathMethod = () => {
         const data = fs.readFileSync(PATH, 'utf8')
         const coefficients = data.slice(0, data.length - 2).split(' ');
         if (!coefficients.every(checkNumber) || coefficients.length !== 3) {
-            console.log('The file does not contain numbers.');
-            return;
+            return 'The file does not contain numbers.';
         }
         return squareSolver(...coefficients);
     } catch (err) {
-        console.log('This file doesnt exists.');
-        return;
+        return 'This file doesnt exists.';
     }
 };
 
-console.log(pathMethod());
-console.log(readlineMethod());
+if (PATH) {
+    console.log(pathMethod());
+} else {
+    console.log(readlineMethod());
+}
+
+// console.log(pathMethod());
+// console.log(readlineMethod());
 
 // console.log(...squareSolver(1, 4, -5)); // 1 -5
 // console.log(...squareSolver(1, -4, 4)); // -2
